@@ -1,0 +1,56 @@
+version 1.5
+
+- bug fix: fixed new gallery bug
+
+version 1.4
+
+- addition: added alt tags to images
+
+version 1.3
+
+- bug fix: fixed the juery include in https websites
+- bug fix: moved the assets include to media folder to assure running from password protected websites
+
+version 1.2
+
+- feature: added joomla 3 support
+
+version 1.1
+
+- bug fix: fixed some valnuralability with the image php output 
+
+version 1.0.8
+
+- done cache filepath of done files instead of many links
+
+version 1.0.7
+
+- bug fix: fixed the http validation bugs
+- bug fix: fixed some strict standards bugs in the get css file. 
+
+version 1.0.5 (02.10.2012)
+
+- bug fix: fixed a small bug with the ul padding/margin
+
+version 1.0.4 (02.09.2012)
+
+- change: added index.html to all folders
+- change: added gpl licence to every php file headers
+
+version 1.0.3 (24.08.2012)
+
+- bug fix: fixed small jump on slide right
+- feature: added items links
+- feature: added border and padding color change on link mouseover. 
+
+version 1.0.2 (22.08.2012)
+
+- change: added _JSEC or die on all php files.
+
+version 1.0.1 (21.08.2012)
+
+- bug fix: got rid of jump on scroll left.
+
+version 1.0 (20.08.2012) 
+
+the first carousel release!

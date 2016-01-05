@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	
+    <fieldset name="general">
+		
+        <field name="title"
+               type="text"
+               label="JGLOBAL_TITLE"
+               description="COM_UNITEHCAROUSEL_TITLE_DESC"
+               class="inputbox"
+               size="30"
+               required="true"
+        />
+		 
+        <field name="alias"
+               type="text"
+               label="JFIELD_ALIAS_LABEL"
+               description="JFIELD_ALIAS_DESC"
+               class="inputbox"
+               size="30"
+        />
+		
+        <field id="published"
+               name="published"
+               type="list"
+               label="JGLOBAL_STATE"
+               description="JFIELD_PUBLISHED_DESC"
+               class="inputbox"
+               size="1"
+               default="1"
+        >
+            <option value="1">
+                JPUBLISHED</option>
+            <option value="0">
+                JUNPUBLISHED</option>			
+        </field>
+		
+        <field name="id"
+               type="text"
+               label="JGLOBAL_FIELD_ID_LABEL"
+               description="JGLOBAL_FIELD_ID_DESC"
+               size="10"
+               default="0"
+               readonly="true"
+               class="readonly"
+        />
+			
+    </fieldset>
+	
+    <!-- ======================== Slider Params ============================= -->
+	
+    <fields name="params" >
+        <fieldset name="general_settings" label="General">
+
+            <field name="width" 
+                   type="mytext" 
+                   label="Carousel Width"
+                   default="800"
+                   class="number"
+                   unit="px" 
+                   description="The maxium width of the carousel. The real width is counted according how much items and buttons are fit into the max width.">
+            </field>
+
+            <field name="image_width" 
+                   type="mytext" 
+                   label="Item Image Width"
+                   default="150"
+                   class="number"
+                   unit="px" 
+                   description="The image width. If border of padding will be selected, the item width will be bigger.">
+            </field>
+
+            <field name="image_height" 
+                   type="mytext" 
+                   label="Item Image Height"
+                   default="100"
+                   class="number"
+                   unit="px" 
+                   description="The image height. Width the image border and the image padding item height can be bigger. The carousel height is set according this setting too.">
+            </field>
+
+            <field name="space_between" 
+                   type="mytext" 
+                   label="Space Between Images"
+                   default="4"
+                   class="number"
+                   unit="px" 
+                   description="Space between items.">
+            </field>
+				
+        </fieldset>
+			
+        <fieldset name="position_settings" label="Position">
+				
+            <field name="position"
+                   type="list"
+                   label="Carousel Position"
+                   description="The positino of the carousel. Center is margin:0px auto; left / right is float:left and float:right. The left and right margin valid only for float positions accordingly."
+                   default="center">
+                <option value="center">Center</option>
+                <option value="left">Left</option>
+                <option value="right">Right</option>
+            </field>
+
+            <field name="margin_left" 
+                   type="mytext" 
+                   label="Left Margin"
+                   default="0"
+                   class="number"
+                   unit="px"
+                   description="Space from left. Works only if left / right position set.">
+            </field>
+					   
+            <field name="margin_right" 
+                   type="mytext" 
+                   label="Right Margin"
+                   default="0"
+                   class="number"
+                   unit="px"
+                   description="Space from right. Works only if left / right position set.">
+            </field>
+
+            <field name="margin_top" 
+                   type="mytext" 
+                   label="Top Margin"
+                   default="0"
+                   class="number"
+                   unit="px"
+                   description="Space from top">
+            </field>
+					   
+            <field name="margin_bottom"
+                   type="mytext" 
+                   label="Bottom Margin"
+                   default="0"
+                   class="number"
+                   unit="px"
+                   description="Space from bottom">
+            </field>
+					   
+            <field name="clear_both"
+                   type="list"
+                   label="Add Clear Both"
+                   description="Add clear:both div to the end of the carousel html. It removes the floating position. "
+                   default="false">
+                <option value="true">Yes</option>
+                <option value="false">No</option>
+            </field>
+				
+        </fieldset>
+			
+        <fieldset name="apperance_settings" label="Apperance">
+
+            <field name="border_width" 
+                   type="mytext" 
+                   label="Image Border Width"
+                   default="1"
+                   class="number"
+                   unit="px"
+                   description="The border around the image. Set to 0 for no border.">
+            </field>
+					   
+            <field name="border_color" 
+                   type="colorpicker" 
+                   label="Border Color"
+                   default="#CACACA"
+                   description="The color of the image border">
+            </field>
+				
+            <field name="image_padding" 
+                   type="mytext" 
+                   label="Image Padding"
+                   default="5"
+                   class="number"
+                   unit="px"
+                   description="Padding around the image. Used for 'double border' effect, set to 0 for disable">
+            </field>
+				
+            <field name="image_back_color" 
+                   type="colorpicker" 
+                   label="Image Background Color"
+                   default="#EBEBEB"
+                   description="The color of the image padding.">
+            </field>
+				
+            <field type="spacer" hr="true" />
+
+            <field name="hover_border_color" 
+                   type="colorpicker" 
+                   label="Border Color - Mouseover"
+                   default="#CACACA"
+                   description="The color of the image border  on link mouseover (works only if enabled slide link)">
+            </field>
+
+            <field name="image_hover_back_color" 
+                   type="colorpicker" 
+                   label="Back. Color - Mouseover"
+                   default="#EBEBEB"
+                   description="The color of the image padding on link mouseover (works only if enabled slide link)">
+            </field>
+
+        </fieldset>
+			
+        <fieldset name="arrows_settings" label="Direction Arrows">
+								 
+            <field name="show_arrows"
+                   type="radio"
+                   class="radio_small"
+                   label="Show Direction Arrows"
+                   description="Show the side arrows"
+                   default="true">					
+                <option value="true">Yes</option>
+                <option value="false">No</option>
+            </field>
+				
+            <field name="arrow_type" 
+                   type="arrows" 
+                   label="Arrows Type"
+                   description="Choose the arrows type from the arrows dialog">
+            </field>
+				
+            <field name="arrows_padding_sides" 
+                   type="mytext" 
+                   label="Arrows Sides Padding"
+                   default="6"
+                   class="number"
+                   unit="px"
+                   description="The horizontal space between the arrows and the sides of the carousel. Negative value will bring the arrows closer to the carousel.">
+            </field>
+
+            <field name="arrows_vertical_tuning" 
+                   type="mytext" 
+                   label="Arrows Vertical Tuning"
+                   default="0"
+                   class="number"
+                   unit="px"
+                   description="You can play with the vertical position of the arrows by settings the tuning value. If negative value, the arrows goes up">
+            </field>
+				
+        </fieldset>
+			
+        <fieldset name="scroll_settings" label="Scroll Settings">
+
+            <field name="direction"
+                   type="list"
+                   label="Direction"
+                   description="The direction in witch the arrows will move"
+                   default="left">
+                <option value="left">Left</option>
+                <option value="right">Right</option>
+            </field>
+				
+				
+            <field name="pause_duration" 
+                   type="mytext" 
+                   label="Pause Duration"
+                   default="2500"
+                   class="number"
+                   unit="ms"
+                   description="Pause between transitions">
+            </field>
+				
+            <field name="scroll_items" 
+                   type="mytext" 
+                   label="Num Scrolling Items"
+                   default="0"
+                   class="number"
+                   description="Number of items scrolling each time. If set to 0 - then the all visible items will scroll">
+            </field>
+				
+            <field name="easing"
+                   type="list"
+                   label="Scrolling Type"
+                   description="The scrolling easign type. Change and see how it affects the transition"
+                   default="swing">
+                <option value="swing">Swing</option>
+                <option value="linear">Linear</option>
+                <option value="quadratic">Quadratic</option>
+                <option value="cubic">Cubic</option>
+                <option value="elastic">Elastic</option>
+            </field>
+
+            <field name="trans_duration" 
+                   type="mytext" 
+                   label="Transition Duration"
+                   default="500"
+                   class="number"
+                   unit="ms"
+                   description="The duration of the transition">
+            </field>
+
+            <field name="pause_on_hover"
+                   type="radio"
+                   class="radio_small"
+                   label="Pause On Hover"
+                   description="Pause on mouse over the carousel"
+                   default="true">
+                <option value="true">Yes</option>
+                <option value="false">No</option>
+            </field>
+				
+				
+        </fieldset>
+			
+    </fields>
+
+</form>

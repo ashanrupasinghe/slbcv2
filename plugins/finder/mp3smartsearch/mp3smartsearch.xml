@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+    This file is part of mp3 Browser.
+    
+    This is free software: you can redistribute it and/or modify it under the terms of the GNU
+    General Public License as published by the Free Software Foundation, either version 2 of the
+    License, or (at your option) any later version.
+    
+    You should have received a copy of the GNU General Public License (V2) along with this. If not,
+    see <http://www.gnu.org/licenses/>.
+    
+    Copyright 2012-'13 Totaal Software (www.totaalsoftware.com).
+-->
+<extension version="1.6" type="plugin" group="finder" method="upgrade">
+    <name>Smart Search - mp3 Browser Fork</name>
+    <version>0.3.1</version>
+
+    <description>Plugin to search through mp3 Browser output</description>
+
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL (V2)</license>
+    <author>Totaal Software</author>
+    <authoremail>Verhagen@Sander.com</authoremail>
+    <authorurl>http://code.google.com/p/mp3-browser/</authorurl>
+    <copyright>Copyright 2012-'13 Totaal Software</copyright>
+    <creationDate>2012</creationDate>
+
+    <files>
+        <filename plugin="mp3smartsearch">mp3smartsearch.php</filename>
+    </files>
+
+    <languages>
+        <language tag="en-GB">language/en-GB/en-GB.Smart Search - mp3 Browser Fork.ini</language>
+        <language tag="nl-NL">language/nl-NL/nl-NL.Smart Search - mp3 Browser Fork.ini</language>
+    </languages>
+
+</extension>

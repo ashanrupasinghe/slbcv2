@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<form>
+	<fields 
+		name="params" 
+		addfieldpath="/modules/mod_janews_featured/assets/elements">
+		<fieldset 
+			name="basic">
+			
+			<field 
+				name="themes" 
+				type="themes"
+				default="" 
+				label="THEME_SELECTION" 
+				description="THEME_SELECTION_DESC"/>
+			
+			<field 
+				name="animType" 
+				type="list" 
+				default="animNewsMoveHor" 
+				label="EFFECT" 
+				description="EFFECT_DESC">
+					<option value="animNewsMoveHor">Move Horizontal</option>
+					<option value="animNewsMoveVir">Move Vertical</option>
+					<option value="animNewsFade">Move Fade</option>
+			</field>
+			
+			<field 
+				name="duration" 
+				type="text" 
+				default="400" 
+				label="ANIMATION_DURATION" 
+				description="ANIMATION_DURATION_DESC" />
+				
+			<field 
+				name="autoplay" 
+				type="list" 
+				default="1" 
+				label="AUTO_PLAY" 
+				description="AUTO_PLAY_DESC">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</field>
+
+			<field 
+				name="autoplay_duration" 
+				type="text" 
+				default="4000" 
+				label="AUTOPLAY_DURATION" 
+				description="AUTOPLAY_DURATION_DESC" />	
+					
+			<field 
+				name="headlinelang" 
+				type="text" 
+				default="TOP STORIES NOW" 
+				label="HEADLINE_TEXT" 
+				description="HEADLINE_TEXT_DESC" />
+			
+			<field 
+				name="showhltools" 
+				type="radio"
+				class="btn-group"	
+				default="1" 
+				label="SHOW_HEADLINE_TOOLS" 
+				description="SHOW_HEADLINE_TOOLS_DESC">
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+			</field>
+			
+			<field 
+				name="showhltitle" 
+				type="radio" 
+				class="btn-group"
+				default="1" 
+				label="SHOW_HEADLINE_ARTICLE_TITLE" 
+				description="SHOW_HEADLINE_ARTICLE_TITLE_DESC">
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+			</field>
+			
+			<field 
+				name="headlineheight" 
+				type="text" 
+				default="220" 
+				label="HEADLINE_FIXED_HEIGHT" 
+				description="HEADLINE_FIXED_HEIGHT_DESC" />
+				
+			<field 
+				name="autoroll" 
+				type="radio" 
+				class="btn-group"
+				default="1" 
+				label="AUTO_ROLL" 
+				description="AUTO_ROLL_DESC">
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+			</field>
+			
+			<field 
+				name="delaytime" 
+				type="text" 
+				default="5" 
+				label="ROLLING_DELAY_TIME" 
+				description="ROLLING_DELAY_TIME_DESC" />
+			
+			<field name="DISPLAY_SETTINGS" type="spacer" hr="false" label="DISPLAY_SETTINGS"/>
+				
+			<field 
+				name="numberofheadlinenews" 
+				type="text" 
+				default="10"
+				class="validate-numeric"
+				label="NUMBER_OF_ARTICLES" 
+				description="NUMBER_OF_ARTICLES_DESC" />
+				
+			<field 
+				name="bigitems" 
+				type="text" 
+				default="1" 
+				class="validate-numeric"
+				label="NUMBER_OF_FEATURED_ARTICLES" 
+				description="NUMBER_OF_FEATURED_ARTICLES_DESC" />
+			
+			<field 
+				name="bigmaxchars" 
+				type="text" 
+				default="0"
+				class="validate-numeric"
+				label="MAX_CHARS_OF_FEATURED_ARTICLES" 
+				description="MAX_CHARS_OF_FEATURED_ARTICLES_DESC" />
+			
+			<field 
+				name="smallmaxchars" 
+				type="text" 
+				default="0" 
+				class="validate-numeric"
+				label="MAX_CHARS_OF_NORMAL_FRONTPAGE_ARTCILE" 
+				description="MAX_CHARS_OF_NORMAL_FRONTPAGE_ARTCILE_DESC" />
+			
+			<field 
+				name="showhlreadmore" 
+				type="radio" 
+				class="btn-group"
+				default="1" 
+				label="SHOW_HEADLINE_READMORE" 
+				description="SHOW_HEADLINE_READMORE_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+			</field>
+			
+			<field 
+				name="showtooltip" 
+				type="radio" 
+				class="btn-group"
+				default="0" 
+				label="ENABLE_TOOLTIP" 
+				description="ENABLE_TOOLTIP_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+			</field>								
+			
+			<field name="IMAGE_SETTINGS" type="spacer" hr="false" label="IMAGE_SETTINGS"/>
+									
+			<field 
+				name="thumbnail_mode" 
+				type="list" 
+				default="crop" 
+				label="THUMBNAIL_MODE" 
+				description="THUMBNAIL_MODE_DESC">
+					<option value="none">USING_IMAGE_SOURCE</option>
+					<option value="resize">USING_RESIZE</option>
+					<option value="crop">USING_CROP</option>
+			</field>
+			
+			<field 
+				name="use_ratio" 
+				type="radio" 
+				class="btn-group"
+				default="1" 
+				label="RESIZE_WITH_THE_RATIO" 
+				description="RESIZE_WITH_THE_RATIO_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+			</field>
+			
+			<field 
+				name="bigshowimage" 
+				type="radio" 
+				class="btn-group"
+				default="1" 
+				label="SHOW_IMAGE_ON_FEATURED_ARTICLES" 
+				description="SHOW_IMAGE_ON_FEATURED_ARTICLES_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+			</field>
+			
+			<field 
+				name="bigimg_w" 
+				type="text" 
+				default="100" 
+				class="validate-numeric"
+				label="FEATURED_ARTICLE_IMAGE_WIDTH" 
+				description="FEATURED_ARTICLE_IMAGE_WIDTH_DESC" />
+			<field 
+				name="bigimg_h" 
+				type="text" 
+				default="100" 
+				class="validate-numeric"
+				label="FEATURED_ARTICLE_IMAGE_HEIGHT" 
+				description="FEATURED_ARTICLE_IMAGE_HEIGHT_DESC" />
+			
+			<field 
+				name="smallshowimage" 
+				type="radio" 
+				class="btn-group"
+				default="1" 
+				label="SHOW_IMAGE_ON_NORMAL_FRONTPAGE_ARTICLE" 
+				description="SHOW_IMAGE_ON_NORMAL_FRONTPAGE_ARTICLE_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+			</field>
+			
+			<field 
+				name="smallimg_w" 
+				type="text" 
+				default="100" 
+				class="validate-numeric"
+				label="NORMAL_ARTICLE_IMAGE_WIDTH" 
+				description="NORMAL_ARTICLE_IMAGE_WIDTH_DESC" />
+			
+			<field 
+				name="smallimg_h" 
+				type="text" 
+				default="100" 
+				class="validate-numeric"
+				label="NORMAL_ARTICLE_IMAGE_HEIGHT" 
+				description="NORMAL_ARTICLE_IMAGE_HEIGHT_DESC" />
+			
+			<field 
+				name="align" 
+				type="list" 
+				default="left" 
+				label="IMAGE_ALIGN" 
+				description="IMAGE_ALIGN_DESC">
+					<option value="left">Left</option>
+					<option value="right">Right</option>
+					<option value="0">None</option>
+			</field>			
+			
+			<field 
+				name="group2"
+				hidden="true" 
+				type="japanel"
+				function="depend">
+				<option for="bigshowimage" value="1" hideRow="true">bigimg_w, bigimg_h</option>
+				<option for="smallshowimage" value="1" hideRow="true">smallimg_w, smallimg_h</option>
+				
+				<option for="themes" value="default" hideRow="true">animType,duration,autoplay,autoplay_duration</option>
+				<option for="themes" value="headline" hideRow="true">headlinelang,showhltools,showhltitle,headlineheight,delaytime,autoroll</option>
+				<option for="themes" value="telineiv" hideRow="true">animType,duration,autoplay,autoplay_duration</option>
+			</field>
+			
+			<field 
+				name="group3"
+				hidden="true" 
+				type="japanel"
+				function="depend">
+					<option for="thumbnail_mode" value="crop" hideRow="true">use_ratio</option>
+			</field>	
+		</fieldset>
+	</fields>
+</form>
